@@ -17,12 +17,12 @@ if TYPE_CHECKING:
     from homeassistant.helpers.entity_platform import AddEntitiesCallback
 
     from .coordinator import ESBDataUpdateCoordinator
-    from .data import IntegrationBlueprintConfigEntry
+    from .data import IntegrationESBConfigEntry
 
 ENTITY_DESCRIPTIONS = (
     BinarySensorEntityDescription(
         key="esb_integration",
-        name="Integration Blueprint Binary Sensor",
+        name="Integration ESB Binary Sensor",
         device_class=BinarySensorDeviceClass.CONNECTIVITY,
     ),
 )
@@ -30,7 +30,7 @@ ENTITY_DESCRIPTIONS = (
 
 async def async_setup_entry(
     hass: HomeAssistant,  # noqa: ARG001 Unused function argument: `hass`
-    entry: IntegrationBlueprintConfigEntry,
+    entry: IntegrationESBConfigEntry,
     async_add_entities: AddEntitiesCallback,
 ) -> None:
     """Set up the binary_sensor platform."""

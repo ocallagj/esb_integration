@@ -18,7 +18,7 @@ type IntegrationESBConfigEntry = ConfigEntry[IntegrationESBData]
 
 @dataclass
 class IntegrationESBData:
-    """Data for the Blueprint integration."""
+    """Data for the ESB integration."""
 
     client: IntegrationESBApiClient
     coordinator: ESBDataUpdateCoordinator

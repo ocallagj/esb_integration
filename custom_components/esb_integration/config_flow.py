@@ -1,4 +1,4 @@
-"""Adds config flow for Blueprint."""
+"""Adds config flow for ESB."""
 
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ from .const import DOMAIN, LOGGER
 
 
 class ESBFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
-    """Config flow for Blueprint."""
+    """Config flow for ESB."""
 
     VERSION = 1
 
