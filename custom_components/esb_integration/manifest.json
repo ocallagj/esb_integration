@@ -1,8 +1,8 @@
 {
   "domain": "esb_integration",
-  "name": "Integration blueprint",
+  "name": "Integration ESB",
   "codeowners": [
-    "@ludeeus"
+    "@ocallagj"
   ],
   "config_flow": true,
   "documentation": "https://github.com/ludeeus/esb_integration",
